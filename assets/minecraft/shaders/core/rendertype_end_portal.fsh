@@ -68,11 +68,11 @@ vec3 chromaticAberration(sampler2D tex, vec4 projCoord, float shift) {
 }
 
 vec3 overlay(vec3 sample, vec3 color) {
-    vec3 result;
-    for (int i = 0; i < 3; i++) {
-        result[i] = sample[i] < 0.5 ? (2.0 * sample[i] * color[i]) : (1.0 - 2.0 * (1.0 - sample[i]) * (1.0 - color[i]));
-    }
-    return result;
+	vec3 result;
+	for (int i = 0; i < 3; i++) {
+		result[i] = sample[i] < 0.5 ? (2.0 * sample[i] * color[i]) : (1.0 - 2.0 * (1.0 - sample[i]) * (1.0 - color[i]));
+	}
+	return result;
 }
 
 out vec4 fragColor;

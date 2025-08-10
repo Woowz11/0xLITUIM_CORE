@@ -1,0 +1,7 @@
+{
+	"parent"      : "minecraft:block/short_grass",
+	"textures": {
+		"all"     : "block/short_grass3",
+		"particle": "block/short_grass3"
+	}
+}

@@ -16,12 +16,12 @@ float rand(vec3 seed){
 }
 
 void main() {
-    vec3 displacedPosition = Position;
+	vec3 displacedPosition = Position;
 	displacedPosition.y += rand(Position + vec3(0.0, 1.0, 0.0)) / 30;
 
-    gl_Position = ProjMat * ModelViewMat * vec4(displacedPosition, 1.0);
+	gl_Position = ProjMat * ModelViewMat * vec4(displacedPosition, 1.0);
 
-    texProj0 = projection_from_position(gl_Position);
-    sphericalVertexDistance = fog_spherical_distance(Position);
-    cylindricalVertexDistance = fog_cylindrical_distance(Position);
+	texProj0 = projection_from_position(gl_Position);
+	sphericalVertexDistance = fog_spherical_distance(Position);
+	cylindricalVertexDistance = fog_cylindrical_distance(Position);
 }
