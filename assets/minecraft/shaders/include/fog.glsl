@@ -22,6 +22,16 @@ float total_fog_value(float sphericalVertexDistance, float cylindricalVertexDist
 
 vec4 apply_fog(vec4 inColor, float sphericalVertexDistance, float cylindricalVertexDistance, float environmentalStart, float environmantalEnd, float renderDistanceStart, float renderDistanceEnd, vec4 fogColor) {
 	float fogValue = total_fog_value(sphericalVertexDistance, cylindricalVertexDistance, environmentalStart, environmantalEnd, renderDistanceStart, renderDistanceEnd);
+	
+	if(fogColor.r < 0.2 && fogColor.g < 0.2 && fogColor.b > 0.2){
+		fogColor = vec4(fogColor.b,0,0,fogColor.a);
+		
+		//inColor.r += fogColor.r / 4;
+		inColor.r *= (1 + fogColor.r * 10);
+		inColor.g *= (1 + fogColor.r * 5);
+		inColor.b /= (1 + fogColor.r * 10);
+	}
+	
 	return vec4(mix(inColor.rgb, fogColor.rgb, fogValue * fogColor.a), inColor.a);
 }
 

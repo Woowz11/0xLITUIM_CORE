@@ -3,6 +3,7 @@
 #moj_import <minecraft:fog.glsl>
 #moj_import <minecraft:dynamictransforms.glsl>
 #moj_import <minecraft:globals.glsl>
+#moj_import <minecraft:woowz.glsl>
 
 in float sphericalVertexDistance;
 in float cylindricalVertexDistance;
@@ -28,18 +29,6 @@ vec2 rotate(vec2 v, float angle) {
     float c = cos(angle);
     mat2 m = mat2(c, -s, s, c);
     return m * v;
-}
-
-float rand(vec3 seed){
-	return (fract(sin(dot(seed, vec3(12.9898, 78.233, 151.7182))) * 43758.5453) - 0.5) * 2;
-}
-
-vec3 overlay(vec3 sample, vec3 color) {
-	vec3 result;
-	for (int i = 0; i < 3; i++) {
-		result[i] = sample[i] < 0.5 ? (2.0 * sample[i] * color[i]) : (1.0 - 2.0 * (1.0 - sample[i]) * (1.0 - color[i]));
-	}
-	return result;
 }
 
 void main() {

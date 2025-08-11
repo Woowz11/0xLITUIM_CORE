@@ -3,6 +3,7 @@
 #moj_import <minecraft:fog.glsl>
 #moj_import <minecraft:matrix.glsl>
 #moj_import <minecraft:globals.glsl>
+#moj_import <minecraft:woowz.glsl>
 
 uniform sampler2D Sampler0;
 uniform sampler2D Sampler1;
@@ -65,14 +66,6 @@ vec3 chromaticAberration(sampler2D tex, vec4 projCoord, float shift) {
 	vec2 uv = projCoord.xy / projCoord.w;
 	vec3 col = texture(tex, uv + vec2(shift, 0)).rgb;
 	return col;
-}
-
-vec3 overlay(vec3 sample, vec3 color) {
-	vec3 result;
-	for (int i = 0; i < 3; i++) {
-		result[i] = sample[i] < 0.5 ? (2.0 * sample[i] * color[i]) : (1.0 - 2.0 * (1.0 - sample[i]) * (1.0 - color[i]));
-	}
-	return result;
 }
 
 out vec4 fragColor;

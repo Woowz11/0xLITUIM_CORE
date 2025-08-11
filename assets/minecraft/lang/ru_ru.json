@@ -25,7 +25,8 @@
 	
 	"block.minecraft.gravel": "§8☠ §7Осколки Сломанных Плат§4|§7Алгоритмов",
 	
-	"block.minecraft.clay": "§7⚙-> §fМатрица Сырых Данных §7<-⚙",
+	"block.minecraft.clay"    : "§7⚙-> §fМатрица Сырых Данных §7<-⚙",
+	"item.minecraft.clay_ball": "§7⚙-> §fЧастица Матрицы Сырых Данных §7<-⚙",
 	
 	"block.minecraft.granite"       : "§4⚡ §cКровавое Ядро Компилятора §4⚡",
 	"block.minecraft.granite_stairs": "§4⚡ §cСтупеньчаттое Кровавое Ядро Компилятора §4⚡",
@@ -43,11 +44,14 @@
 	"block.minecraft.diorite_wall"  : "§f⛧ §7Ограждающий Очищенный Фрагмент Памяти §f⛧",
 	
 	"menu.game"        : "§4----------- ⛧ §6Консоль GOLU §4⛧ -----------",
-	"menu.returnToGame": "§e☣ §7return §bthis §e☣",
-	"menu.returnToMenu": "§7destroy(§bthis§7)",
-	"menu.shareToLan"  : "§7127.0.0.1",
-	"menu.reportBugs"  : "§7report",
-	"gui.stats"        : "§bthis§7.stats()",
-	"gui.advancements" : "§bthis§7.advanc()",
-	"menu.sendFeedback": "§7WE.§dLithium§7.Call()"
+	"menu.returnToGame": "§e☣ §7return §bthis; §e☣",
+	"menu.returnToMenu": "§bthis§7.destroy();",
+	"menu.shareToLan"  : "§f127.0.0.1",
+	"menu.reportBugs"  : "§7WE.§dMinecraft§7.rep();",
+	"gui.stats"        : "§bthis§7.stats();",
+	"gui.advancements" : "§bthis§7.advanc();",
+	"menu.sendFeedback": "§7WE.§dLithium§7.Call();",
+	
+	"block.minecraft.oak_log"   : "§e⭐§4Кровеносный §7Кондуит GOLU§e⭐",
+	"block.minecraft.oak_leaves": "§e⭐§7Армированная Крона§e⭐"
 }

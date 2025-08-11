@@ -7,6 +7,7 @@
 		"overlay"     : "block/grass_block_side_overlay",
 		"overlay_top" : "block/grass_block_top_overlay"
 	},
+	"ambientocclusion": false,
 	"elements": [
 		{   "from": [ 0, 16.01, 0 ],
 			"to": [ 16, 16.01, 16 ],
@@ -15,19 +16,17 @@
 				"up"   : { "uv": [ 0, 0, 16, 16 ], "texture": "#top",	"cullface": "up", "tintindex": 0 }
 			}
 		},
-		{   "from": [ 0 , 16, 12 ],
-			"to"  : [ 16, 32, 12 ],
+		{   "from" : [ 0 , 16, 12 ],
+			"to"   : [ 16, 32, 12 ],
 			"shade": false,
-			"light_emission": 15,
 			"faces": {
 				"north"   : { "uv": [ 0, 0, 16, 16], "texture": "#overlay_top",	"cullface": "up" },
 				"south"   : { "uv": [ 0, 0, 16, 16], "texture": "#overlay_top",	"cullface": "up" }
 			}
 		},
-		{   "from": [ 12 , 16, 0  ],
-			"to"  : [ 12 , 32, 16 ],
+		{   "from" : [ 12 , 16, 0  ],
+			"to"   : [ 12 , 32, 16 ],
 			"shade": false,
-			"light_emission": 15,
 			"faces": {
 				"west"   : { "uv": [ 0, 0, 16, 16], "texture": "#overlay_top",	"cullface": "up" },
 				"east"   : { "uv": [ 0, 0, 16, 16], "texture": "#overlay_top",	"cullface": "up" }
