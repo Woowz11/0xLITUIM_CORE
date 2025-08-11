@@ -14,5 +14,40 @@
 	"block.minecraft.grass_block": "§5⚡§4Живая §cПлесень §4Lithium§5⚡",
 	"block.minecraft.dirt"       : "§8⚙§4Прах §8Поглотителя §4Кода§8⚙",
 	
-	"block.minecraft.short_grass": "§c☢§7Узда Потока §8- §9Р§2е§9з§1и§9с§8т§9о§6р§c☢"
+	"block.minecraft.short_grass": "§c☢§7Узда Потока §8- §9Р§2е§9з§1и§9с§8т§9о§6р§c☢",
+	
+	"block.minecraft.sand": "§e⚠ §6Пепел Выжженных Секторов",
+	
+	"block.minecraft.sandstone"       : "§6§k⛧ §eCompressed Пепел §c(§4Гробница Кодовых Руин§c) §6§k⛧",
+	"block.minecraft.sandstone_stairs": "§6§k⛧ §eСтупеьчаттый Compressed Пепел §c(§4Гробница Кодовых Руин§c) §6§k⛧",
+	"block.minecraft.sandstone_slab"  : "§6§k⛧ §eПолупроводниковый Compressed Пепел §c(§4Гробница Кодовых Руин§c) §6§k⛧",
+	"block.minecraft.sandstone_wall"  : "§6§k⛧ §eОграждающий Compressed Пепел §c(§4Гробница Кодовых Руин§c) §6§k⛧",
+	
+	"block.minecraft.gravel": "§8☠ §7Осколки Сломанных Плат§4|§7Алгоритмов",
+	
+	"block.minecraft.clay": "§7⚙-> §fМатрица Сырых Данных §7<-⚙",
+	
+	"block.minecraft.granite"       : "§4⚡ §cКровавое Ядро Компилятора §4⚡",
+	"block.minecraft.granite_stairs": "§4⚡ §cСтупеньчаттое Кровавое Ядро Компилятора §4⚡",
+	"block.minecraft.granite_slab"  : "§4⚡ §cПолупроводниковое Кровавое Ядро Компилятора §4⚡",
+	"block.minecraft.granite_wall"  : "§4⚡ §cОграждающее Кровавое Ядро Компилятора §4⚡",
+	
+	"block.minecraft.andesite"       : "§8☢ §7Трупы Машинных Команд §8☢",
+	"block.minecraft.andesite_stairs": "§8☢ §7Ступенчаттые Трупы Машинных Команд §8☢",
+	"block.minecraft.andesite_slab"  : "§8☢ §7Полупроводниковые Трупы Машинных Команд §8☢",
+	"block.minecraft.andesite_wall"  : "§8☢ §7Ограждающие Трупы Машинных Команд §8☢",
+	
+	"block.minecraft.diorite"       : "§f⛧ §7Очищенный Фрагмент Памяти §f⛧",
+	"block.minecraft.diorite_stairs": "§f⛧ §7Ступеньчатыый Очищенный Фрагмент Памяти §f⛧",
+	"block.minecraft.diorite_slab"  : "§f⛧ §7Полупроводниковый Очищенный Фрагмент Памяти §f⛧",
+	"block.minecraft.diorite_wall"  : "§f⛧ §7Ограждающий Очищенный Фрагмент Памяти §f⛧",
+	
+	"menu.game"        : "§4----------- ⛧ §6Консоль GOLU §4⛧ -----------",
+	"menu.returnToGame": "§e☣ §7return §bthis §e☣",
+	"menu.returnToMenu": "§7destroy(§bthis§7)",
+	"menu.shareToLan"  : "§7127.0.0.1",
+	"menu.reportBugs"  : "§7report",
+	"gui.stats"        : "§bthis§7.stats()",
+	"gui.advancements" : "§bthis§7.advanc()",
+	"menu.sendFeedback": "§7WE.§dLithium§7.Call()"
 }
